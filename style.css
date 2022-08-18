@@ -78,8 +78,6 @@ body {
 .search-button {
 	width: var(--search-button-size);
 	height: var(--search-button-size);
-	background-color: var(--search-button-bg-color);
-	border: 0;
 }
 
 .search-input {
@@ -88,10 +86,20 @@ body {
 	border: 0;
 	border-radius: 0.85rem;
 	width: 100%;
+	font-size: 1rem;
 }
 
-.header-content {
+.user-menu {
 	display: flex;
+	justify-content: end;
+	gap: 2rem;
+}
+
+.header-button {
+	width: var(--search-button-size);
+	height: var(--search-button-size);
+	background-color: var(--search-button-bg-color);
+	border: 0;
 }
 
 .user-info-bar {
