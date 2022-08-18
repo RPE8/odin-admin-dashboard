@@ -34,6 +34,7 @@ body {
 	padding: min(2rem, 4vmin);
 	display: grid;
 	grid-template-columns: 17rem 1fr;
+	grid-template-rows: auto 1fr;
 	grid-template-areas:
 		"side header"
 		"side content";
