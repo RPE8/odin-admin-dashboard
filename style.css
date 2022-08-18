@@ -6,6 +6,9 @@
 		local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+:root {
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -16,4 +19,48 @@ html,
 body {
 	height: 100%;
 	font-family: "system";
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	max-width: 1800px;
+	padding: min(2rem, 4vmin);
+	display: grid;
+	grid-template-columns: 17rem 1fr;
+	grid-template-areas:
+		"side header"
+		"side content";
+	gap: 10px;
+}
+
+.toolbar {
+	grid-area: side;
+	background-color: gainsboro;
+}
+
+.header {
+	grid-area: header;
+	background-color: antiquewhite;
+}
+
+.content {
+	grid-area: content;
+	background-color: lightblue;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		grid-template-areas:
+			"side"
+			"header"
+			"content";
+		grid-template-columns: 1fr;
+	}
 }
