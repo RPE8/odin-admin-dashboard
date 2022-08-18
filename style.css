@@ -8,7 +8,12 @@
 
 :root {
 	--color-1: rgb(230, 230, 230);
+	--color-2: white;
 	--search-bar-bg-color: var(--color-1);
+	--header-bg-color: var(--color-2);
+	--search-button-bg-color: var(--header-bg-color);
+	--search-bar-input-height: 1.7rem;
+	--search-button-size: calc(var(--search-bar-input-height) - 0.2rem);
 }
 
 * {
@@ -50,7 +55,7 @@ body {
 
 .header {
 	grid-area: header;
-	background-color: white;
+	background-color: var(--header-bg-color);
 	padding: 1rem;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
@@ -65,12 +70,20 @@ body {
 .search-bar {
 	width: 100%;
 	display: flex;
+	align-items: center;
 	margin-right: auto;
 	gap: 1rem;
 }
 
+.search-button {
+	width: var(--search-button-size);
+	height: var(--search-button-size);
+	background-color: var(--search-button-bg-color);
+	border: 0;
+}
+
 .search-input {
-	max-height: 1.5rem;
+	height: var(--search-bar-input-height);
 	background-color: var(--search-bar-bg-color);
 	border: 0;
 	border-radius: 0.85rem;
