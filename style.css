@@ -44,7 +44,7 @@ body {
 .container {
 	height: 100%;
 	width: 100%;
-	max-width: 1800px;
+	/* max-width: 1800px; */
 	/* padding: min(2rem, 4vmin); */
 	display: grid;
 	grid-template-columns: 17rem 1fr;
@@ -52,7 +52,6 @@ body {
 	grid-template-areas:
 		"side header"
 		"side content";
-	gap: 10px;
 }
 
 .toolbar {
