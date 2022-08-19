@@ -9,17 +9,24 @@
 :root {
 	--color-1: rgb(230, 230, 230);
 	--color-2: white;
+	--color-3: #059669;
 	--search-bar-bg-color: var(--color-1);
 	--header-bg-color: var(--color-2);
 	--search-button-bg-color: var(--header-bg-color);
 	--search-bar-input-height: 1.7rem;
 	--search-button-size: calc(var(--search-bar-input-height) - 0.2rem);
+	--action-button-bg-color: var(--color-3);
+	--action-buttons-font-color: var(--color-2);
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+html {
+	font-size: calc(0.625rem + 0.4vw);
 }
 
 html,
@@ -29,16 +36,16 @@ body {
 }
 
 body {
-	display: flex;
+	/* display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 }
 
 .container {
 	height: 100%;
 	width: 100%;
 	max-width: 1800px;
-	padding: min(2rem, 4vmin);
+	/* padding: min(2rem, 4vmin); */
 	display: grid;
 	grid-template-columns: 17rem 1fr;
 	grid-template-rows: auto 1fr;
@@ -56,7 +63,7 @@ body {
 .header {
 	grid-area: header;
 	background-color: var(--header-bg-color);
-	padding: 1rem;
+	padding: 1.5rem 2.3rem;
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	grid-template-rows: auto auto;
@@ -136,6 +143,24 @@ body {
 
 .user-info-bar__user-name {
 	font-size: 1.1rem;
+}
+
+.action-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.action-buttons__action-button {
+	padding-block: 0.6rem;
+	width: 5.8rem;
+	border: 0;
+	border-radius: 16px;
+	text-align: center;
+	color: var(--action-buttons-font-color);
+	background-color: var(--action-button-bg-color);
+	font-size: 1rem;
 }
 
 .content {
