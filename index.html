@@ -14,26 +14,28 @@
 		<div class="container">
 			<aside class="toolbar"></aside>
 			<header class="header">
-				<div class="search-bar">
-					<button class="search-button header-button"><span class="material-icons">search</span></button>
-					<input type="search" class="search-input" />
-				</div>
-				<div class="user-menu">
-					<button class="notification-button header-button">
-						<span class="material-symbols-outlined"> notifications_active </span>
+				<div class="header__search-bar search-bar">
+					<button class="search-bar__search-button search-button">
+						<span class="seach-button__icon material-icons">search</span>
 					</button>
-					<img src="./assets/images" alt="avatar" class="avatar" />
+					<input class="search-bar__search-input search-input" type="search" />
+				</div>
+				<div class="header__user-menu user-menu">
+					<button class="user-menu__notification-button">
+						<span class="notification-button__icon material-symbols-outlined"> notifications_active </span>
+					</button>
+					<img class="user-menu__avatar" src="./assets/images" alt="avatar" />
 					<p>Morgan Oakley</p>
 				</div>
-				<div class="user-info-bar">
-					<img src="./assets/images" alt="avatar" class="avatar" />
+				<div class="header__user-info-bar user-info-bar">
+					<img class="user-info-bar__avatar" src="./assets/images" alt="avatar" />
 					<p>Hi there,</p>
 					<p>Morgan Oakley (@morgan)</p>
 				</div>
-				<div class="action-buttons">
-					<button class="new-button">Btn</button>
-					<button class="upload-button">Btn</button>
-					<button class="share-button">Btn</button>
+				<div class="header__action-buttons action-buttons">
+					<button class="action-buttons__new-button">Btn</button>
+					<button class="action-buttons__upload-button">Btn</button>
+					<button class="action-buttons__share-button">Btn</button>
 				</div>
 			</header>
 			<main class="content"></main>
