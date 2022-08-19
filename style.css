@@ -98,6 +98,12 @@ body {
 	gap: 2rem;
 }
 
+.user-menu__avatar {
+	width: 35px;
+	height: auto;
+	border-radius: 50%;
+}
+
 .user-menu__user-name {
 	font-weight: bold;
 }
