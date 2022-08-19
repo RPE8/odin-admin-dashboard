@@ -71,7 +71,13 @@ body {
 	gap: 1rem;
 }
 
-.search-bar__search-button {
+.search-bar__search-button,
+.notification-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--header-bg-color);
+	border: 0;
 	width: var(--search-button-size);
 	height: var(--search-button-size);
 }
@@ -88,6 +94,7 @@ body {
 .header__user-menu {
 	display: flex;
 	justify-content: end;
+	align-items: center;
 	gap: 2rem;
 }
 
