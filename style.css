@@ -105,7 +105,8 @@ body {
 }
 
 .user-menu__user-name {
-	font-weight: bold;
+	font-weight: bolder;
+	font-size: 0.9rem;
 }
 
 .user-info-bar {
@@ -126,6 +127,14 @@ body {
 .user-info-bar__text,
 .user-info-bar__user-name {
 	font-weight: bold;
+}
+
+.user-info-bar__text {
+	font-size: 0.8rem;
+}
+
+.user-info-bar__user-name {
+	font-size: 1.1rem;
 }
 
 .content {
