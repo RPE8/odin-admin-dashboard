@@ -98,7 +98,8 @@ body {
 	gap: 2rem;
 }
 
-.user-menu__notification-button {
+.user-menu__user-name {
+	font-weight: bold;
 }
 
 .user-info-bar {
@@ -106,7 +107,9 @@ body {
 	margin-right: auto;
 }
 
-.user-menu__avatar {
+.user-info-bar__text,
+.user-info-bar__user-name {
+	font-weight: bold;
 }
 
 .content {
