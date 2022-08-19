@@ -114,6 +114,7 @@ body {
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
 	column-gap: 0.6rem;
+	align-items: center;
 	margin-right: auto;
 }
 
