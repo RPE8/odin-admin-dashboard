@@ -60,7 +60,7 @@ body {
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	grid-template-rows: auto auto;
-	gap: 2rem;
+	gap: 1.5rem;
 }
 
 .header__search-bar {
@@ -113,7 +113,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
-	gap: 10px;
+	column-gap: 0.6rem;
 	margin-right: auto;
 }
 
