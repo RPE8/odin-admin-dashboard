@@ -17,6 +17,8 @@
 	--search-button-size: calc(var(--search-bar-input-height) - 0.2rem);
 	--action-button-bg-color: var(--color-3);
 	--action-buttons-font-color: var(--color-2);
+	--content-bg-color: var(--color-1);
+	--toolbar-bg-color: var(--color-3);
 }
 
 * {
@@ -56,7 +58,7 @@ body {
 
 .toolbar {
 	grid-area: side;
-	background-color: gainsboro;
+	background-color: var(--toolbar-bg-color);
 }
 
 .header {
@@ -164,7 +166,7 @@ body {
 
 .content {
 	grid-area: content;
-	background-color: lightblue;
+	background-color: var(--content-bg-color);
 }
 
 @media (max-width: 1024px) {
