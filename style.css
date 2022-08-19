@@ -104,7 +104,17 @@ body {
 
 .user-info-bar {
 	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+	gap: 10px;
 	margin-right: auto;
+}
+
+.user-info-bar__avatar {
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
+	grid-row: 1 / -1;
 }
 
 .user-info-bar__text,
