@@ -175,8 +175,8 @@ body {
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	padding: 1rem;
-	gap: 1rem;
+	padding: 1rem 2rem 1rem 1rem;
+	gap: 1.5rem;
 }
 
 .content__tiles {
@@ -189,7 +189,7 @@ body {
 	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 	grid-template-rows: min-content;
 	grid-auto-rows: 15rem;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .tiles--announcement {
