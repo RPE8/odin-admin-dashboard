@@ -190,6 +190,14 @@ body {
 	gap: 2rem;
 }
 
+.tiles--announcement {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+	gap: 2rem;
+	grid-row: 1;
+}
+
 .tiles__header {
 	grid-column: 1 / -1;
 }
