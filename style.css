@@ -11,6 +11,7 @@
 	--color-2: white;
 	--color-3: #059669;
 	--color-4: orange;
+	--color-5: rgb(82, 81, 81);
 	--search-bar-bg-color: var(--color-1);
 	--header-bg-color: var(--color-2);
 	--search-button-bg-color: var(--header-bg-color);
@@ -22,6 +23,7 @@
 	--toolbar-bg-color: var(--color-3);
 	--tile-bg-color: var(--color-2);
 	--tile-status-border: var(--color-4);
+	--description-font-color: var(--color-5);
 }
 
 * {
@@ -209,6 +211,40 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	border-left: 0.5rem solid var(--tile-status-border);
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tile .description {
+	color: var(--description-font-color);
+}
+
+.tiles--announcement .tile {
+	border: 0;
+	font-size: 0.9rem;
+}
+
+.announcements__announcement {
+	border-bottom: 1px gray solid;
+	padding-block: 1.2rem;
+}
+
+.announcements__announcement:first-of-type {
+	padding-top: 0;
+}
+
+.announcements__announcement:last-of-type {
+	border: 0;
+	padding-bottom: 0;
+}
+
+.announcement__header {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.announcement__description {
+	margin-top: 0.3rem;
+	font-size: 0.79rem;
 }
 
 .detailed-buttons {
