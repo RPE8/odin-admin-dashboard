@@ -175,14 +175,20 @@ body {
 }
 
 .content__tiles {
+	margin-top: 1rem;
 	grid-row: 1 / -1;
 }
 
 .tiles {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-template-rows: min-content;
 	grid-auto-rows: 15rem;
 	gap: 2rem;
+}
+
+.tiles__header {
+	grid-column: 1 / -1;
 }
 
 .tile {
