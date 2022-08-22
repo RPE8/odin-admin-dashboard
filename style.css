@@ -186,7 +186,7 @@ body {
 
 .tiles {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
 	grid-template-rows: min-content;
 	grid-auto-rows: 18rem;
 	gap: 1rem;
@@ -199,6 +199,7 @@ body {
 	grid-template-rows: auto 1fr;
 	gap: 1rem;
 	grid-row: 1;
+	align-self: start;
 }
 
 .tiles--trendings {
@@ -207,6 +208,7 @@ body {
 	grid-template-rows: auto 1fr;
 	gap: 1rem;
 	grid-row: 2;
+	align-self: start;
 }
 
 .tiles__header {
@@ -254,6 +256,33 @@ body {
 .announcement__description {
 	margin-top: 0.3rem;
 	font-size: 0.79rem;
+}
+
+.tiles--trendings .tile {
+	border: 0;
+	font-size: 0.9rem;
+}
+
+.tiles--trendings .tile {
+	padding: 1rem;
+}
+
+.trendings__trending {
+	margin: 1rem 0;
+}
+
+.trendings__trending:first-of-type {
+	margin-top: 0;
+}
+
+.tiles--trendings .user-info-bar {
+	grid-template-columns: auto 1fr;
+	column-gap: 1rem;
+}
+
+.tiles--trendings .user-info-bar__user-name {
+	color: var(--description-font-color);
+	font-size: 0.95rem;
 }
 
 .detailed-buttons {
