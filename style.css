@@ -64,6 +64,7 @@ body {
 .toolbar {
 	grid-area: side;
 	background-color: var(--toolbar-bg-color);
+	display: grid;
 }
 
 .header {
