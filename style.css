@@ -10,6 +10,7 @@
 	--color-1: rgb(230, 230, 230);
 	--color-2: white;
 	--color-3: #059669;
+	--color-4: orange;
 	--search-bar-bg-color: var(--color-1);
 	--header-bg-color: var(--color-2);
 	--search-button-bg-color: var(--header-bg-color);
@@ -20,6 +21,7 @@
 	--content-bg-color: var(--color-1);
 	--toolbar-bg-color: var(--color-3);
 	--tile-bg-color: var(--color-2);
+	--tile-status-border: var(--color-4);
 }
 
 * {
@@ -197,6 +199,7 @@ body {
 	padding: 2rem 1rem 2rem 2rem;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	border-left: 0.5rem solid var(--tile-status-border);
 }
 
 .detailed-buttons {
